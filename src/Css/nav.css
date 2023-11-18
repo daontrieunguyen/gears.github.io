@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* Css thằng cha */
+.fixed-nav { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 10; 
+    width: 100%; 
+    height: 50px; 
+    background-color: #00a087; 
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /* position: relative; */
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+  
+li {
+    float: left;
+}
+
+/* Css logo */
+#Mei {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 18px; 
+}
+
+#Mei:hover {
+    color: #bc7b7b;
+    cursor: pointer;
+}
+
+/* Css nội dung trên menu */
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 35px 30px;
+    text-decoration: none;
+    font-size: 18px; 
+}
+
+/* Css nút tìm kiếm */
+.search-container button {
+    float: right;
+    padding: 9.2px 15px;
+    margin-top: 30px;
+    margin-right: 60px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container {
+    float: right;
+}
+
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 30px;
+    font-size: 17px;
+    border: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.search-container button:hover {
+    background: #a3a0a0;
+}
+
+/* Css khung cha cho home menu và ảnh */
+.IMG {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Css ảnh home menu */
+.imgmenu {
+    background: url(../img/Menu-graphiccard.jpg);
+    width: 100%;
+    height: 840px;
+    background-size: 100% 100%;
+    opacity: 0.9;
+    background-repeat: no-repeat; 
+    position: absolute;
+}
+
+/* Css cho chữ ở trong ảnh menu */
+.animate {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #e52363 67%,
+    #fff800 100%
+  );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 4s linear infinite;
+    display: inline-block;
+    font-size: 100px;
+    position: absolute;
+    left: 33%;
+    padding-top: 210px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.animate2 {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3.2s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    left: 33.15%;
+    padding-top: 400px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Css menu sổ xuống cho Home */
+.homemenu {
+    position: relative;
+    display: inline-block;
+}
+
+.homemenu:hover {
+    color:#bc7b7b
+}
+
+.drop {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: #906a6a;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+} 
+
+#menucha:hover .drop{ 
+    display: block;
+    color: red;  
+}
+
+.drop a{
+    text-align: left;
+}
+
+.drop a:hover{
+    color: rgb(209, 136, 118);
+    /* margin-left: 0px;
+    margin-right: 1px; */
+}
+
+/*Khi bạn hover vào phần tử có class là .homemenu, các phần tử có class là .drop ngay sau .homemenu sẽ thay đổi thuộc tính hiển thị (display) và màu sắc (color) như đã được định nghĩa trong CSS */
+
+/* Css thanh giới thiệu trang menu */
+#advbar {
+    position: absolute;
+    top: 820px;
+    width: 100%;
+    height: 140px;
+    color: white;
+    background-color: #131313;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/* Css icon đầu */
+#advbar #advbar1 {
+    position: absolute;
+    display: flex;
+    left: 10%;
+}
+
+#advbar1 .fa-solid {
+    font-size:70px;
+    margin-top: 35px;
+}
+
+#advbar1 #fontbar1 {
+    margin-top: 52px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+/* Css icon thứ 2 */
+
+#advbar #advbar2 {
+    position: absolute;
+    display: flex;
+    left: 42%;
+}
+
+#advbar2 .fa-solid {
+    font-size:70px;
+    margin-top: 35px;
+}
+
+#advbar2 #fontbar2 {
+    margin-top: 52px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+/* Css icon thứ 3 */
+
+#advbar #advbar3 {
+    position: absolute;
+    display: flex;
+    left: 75%;
+}
+
+#advbar3 .fa-solid {
+    font-size:70px;
+    margin-top: 35px;
+}
+
+#advbar3 #fontbar3 {
+    margin-top: 52px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+/* Css cho showcase ở trang chủ */
+#showcase {
+    position: absolute;
+    top: 960px;
+    width: 100%;
+    height: 1000px;
+    color: white;
+    background-color: #252424;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
